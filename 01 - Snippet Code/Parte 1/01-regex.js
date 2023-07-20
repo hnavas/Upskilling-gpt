@@ -5,7 +5,8 @@
 //  - Al menos 1 carácter especial
 
 function validarContraseña() {
-   let tuRegex; // Agrega tu regex
+   let tuRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{}[\]:;"'<>,.?/\\|]).{8,}$/;
+
    return tuRegex;
 }
 
