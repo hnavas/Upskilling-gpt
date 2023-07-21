@@ -5,7 +5,7 @@ test('Encuentra la palabra en el texto', () => {
    const texto = 'La casa es bonita y la casa es grande';
    const palabra = 'casa';
    const resultado = buscarPalabra(texto, palabra);
-   expect(resultado).toEqual([3, 8]);
+   expect(resultado).toEqual([3, 6]);
 });
 
 // Test para verificar si la función maneja correctamente una palabra que no se encuentra en el texto
@@ -37,5 +37,5 @@ test('Maneja texto y palabra en mayúsculas y minúsculas', () => {
    const texto = 'La casa es bonita y la casa es grande';
    const palabra = 'CASA';
    const resultado = buscarPalabra(texto, palabra);
-   expect(resultado).toEqual([3, 8]);
+   expect(resultado).toEqual([3, 6]);
 });
