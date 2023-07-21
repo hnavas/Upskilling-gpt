@@ -1,14 +1,18 @@
 //Esta función tiene como objetivo retornar un nuevo array con los elementos únicos del array de entrada
 const getUniqueElements = (arr) => {
-   let uniqueElements = [];
+   if (!Array.isArray(arr)) return [];
+
+   const uniqueElementsSet = new Set();
+   const uniqueElementsArray = [];
 
    arr.forEach((element) => {
-      if (uniqueElements.includes(element)) {
-         uniqueElements.push(element);
+      if (!uniqueElementsSet.has(element)) {
+         uniqueElementsSet.add(element);
+         uniqueElementsArray.push(element);
       }
    });
 
-   return uniqueElements;
+   return uniqueElementsArray;
 };
 
 getUniqueElements();

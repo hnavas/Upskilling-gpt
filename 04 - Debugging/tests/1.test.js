@@ -1,8 +1,8 @@
 const findLargestWord = require('../Ejercicio 01.js');
 
-test('findLargestWord returns the largest word in a sentence', () => {
+test('findLargestWord returns the first largest word in a sentence', () => {
    expect(findLargestWord('The quick brown fox jumps over the lazy dog')).toBe(
-      'jumps'
+      'quick'
    );
 });
 

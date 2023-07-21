@@ -1,9 +1,9 @@
-const isPalindrome = require('../Ejercicio 03.js');
+const isPalindrome = require('../Ejercicio 03');
 
 test('isPalindrome returns true for palindromic strings', () => {
    expect(isPalindrome('radar')).toBe(true);
    expect(isPalindrome('A man, a plan, a canal: Panama')).toBe(true);
-   expect(isPalindrome('Madam Arora teaches malayalam')).toBe(true);
+   expect(isPalindrome('Madam Arora teaches malayalam')).toBe(false);
 });
 
 test('isPalindrome returns false for non-palindromic strings', () => {
